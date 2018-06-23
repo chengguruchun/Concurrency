@@ -1,8 +1,7 @@
-package publish;
+package com.cheng.concurrency.example.publish;
 
 import com.cheng.concurrency.annoations.NotRecommend;
 import com.cheng.concurrency.annoations.NotThreadSafe;
-import com.cheng.concurrency.annoations.ThreadSafe;
 import lombok.extern.slf4j.Slf4j;
 
 /**

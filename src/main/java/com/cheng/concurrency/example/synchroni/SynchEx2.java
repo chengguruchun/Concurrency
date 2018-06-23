@@ -1,4 +1,4 @@
-package synchroni;
+package com.cheng.concurrency.example.synchroni;
 
 import com.cheng.concurrency.annoations.ThreadSafe;
 import lombok.extern.slf4j.Slf4j;

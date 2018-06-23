@@ -1,4 +1,4 @@
-package singleton;
+package com.cheng.concurrency.example.singleton;
 
 import com.cheng.concurrency.annoations.ThreadSafe;
 

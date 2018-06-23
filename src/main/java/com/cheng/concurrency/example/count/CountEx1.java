@@ -1,4 +1,4 @@
-package count;
+package com.cheng.concurrency.example.count;
 
 import com.cheng.concurrency.annoations.NotThreadSafe;
 import lombok.extern.slf4j.Slf4j;

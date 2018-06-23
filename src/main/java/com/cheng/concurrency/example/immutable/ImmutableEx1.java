@@ -1,4 +1,4 @@
-package immutable;
+package com.cheng.concurrency.example.immutable;
 
 import com.cheng.concurrency.annoations.NotThreadSafe;
 import com.google.common.collect.Maps;

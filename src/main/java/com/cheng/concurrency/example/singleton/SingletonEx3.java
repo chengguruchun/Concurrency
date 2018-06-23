@@ -1,4 +1,4 @@
-package singleton;
+package com.cheng.concurrency.example.singleton;
 
 /**
  * @Author :cheng

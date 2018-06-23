@@ -11,12 +11,11 @@ package com.cheng.concurrency.example.threadLocal;
 public class Task implements Runnable{
     private static ThreadLocal<Double> value = new ThreadLocal(){
         @Override
-    protected Double initialValue() {
+        protected Double initialValue() {
 
             return Math.random();
         }
     };
-
 
     @Override
     public void run() {
