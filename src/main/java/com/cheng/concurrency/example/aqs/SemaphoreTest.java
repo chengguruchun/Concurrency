@@ -34,7 +34,8 @@ public class SemaphoreTest {
                     }
             );
         }
-        exec.shutdown();
+        exec.shutdown();//不再接受新的任务，可以继续处理保存在阻塞队列里面的
+        //exec.shutdownNow();//不再接受新的任务，不处理保存在阻塞队列里面的，也会放弃正正在处理的线程
     }
 
     private static void test(int threadNum) throws InterruptedException {
