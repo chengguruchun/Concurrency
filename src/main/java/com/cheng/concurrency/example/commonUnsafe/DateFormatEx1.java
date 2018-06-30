@@ -24,7 +24,7 @@ public class DateFormatEx1 {
 
     public static int threadTotal = 200;
 
-    private static SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMdd");
+    private static  SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMdd");
 
     public static void main(String[] args) throws InterruptedException {
         ExecutorService executorService = Executors.newCachedThreadPool();
@@ -51,7 +51,14 @@ public class DateFormatEx1 {
 
     public  static void update() {
         try {
-            simpleDateFormat.parse("20100204");
+           /* synchronized (simpleDateFormat) {
+                simpleDateFormat.parse("20100204");
+            }*/
+            //上面的同步保证了线程安全，但是低效
+            //simpleDateFormat.parse("20100204");
+
+            //用threadlocal保证线程安全
+            ConcurrentDateUtil.parse("20100204");
         } catch (ParseException e) {
 
         }
