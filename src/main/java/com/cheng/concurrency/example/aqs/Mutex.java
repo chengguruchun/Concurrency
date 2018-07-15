@@ -1,5 +1,6 @@
 package com.cheng.concurrency.example.aqs;
 
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.AbstractQueuedSynchronizer;
 import java.util.concurrent.locks.Condition;
@@ -77,5 +78,7 @@ public class Mutex implements Lock{
 
     public static void main(String[] args) {
         Lock lock = new ReentrantLock();
+        ConcurrentHashMap<String, String> map = new ConcurrentHashMap<>();
+        map.mappingCount();
     }
 }
